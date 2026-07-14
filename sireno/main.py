@@ -18,16 +18,6 @@ intents.members = True
 # Crear el bot
 bot = commands.Bot(command_prefix='s!', intents=intents) # el prefijo usado será s!
 
-# Cargar cogs
-# initial_extensions = [
-#     'cogs.moderation_cog',
-# ]
-# for extension in initial_extensions:
-#     try:
-#         bot.load_extension(extension)
-#     except Exception as e:
-#         print(f'Fallo al cargar la extensión {extension}.')
-
 # *** Eventos
 startEvents(bot)
 

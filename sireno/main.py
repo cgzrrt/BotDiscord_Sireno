@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 import os
 
 from events import startEvents
+from api import main
 
 # Discord setup
 load_dotenv() # carga el .env 
@@ -37,4 +38,5 @@ async def dm(ctx, *, msg):
 
 
 # *** Run
+main.keep_alive()
 bot.run(token, log_handler=handler)   

@@ -69,8 +69,19 @@ class FunCog(commands.Cog):
     async def rate_error(self, ctx, error):
         if isinstance(error, commands.CommandError):
             await ctx.reply('¡Tienes que preguntar algo!')
-        
-
+    
+    # Decir algo
+    @commands.command()
+    async def say(self, ctx, *, frase):
+        """Sireno dice algo"""
+        await ctx.message.delete()
+        await ctx.send(f'{frase}')
+    
+    # Saludar
+    @commands.command()
+    async def hola(self, ctx):
+        """Sireno saluda"""
+        await ctx.reply(f"Hola {ctx.author.mention}!")
 
 # Añadir al cog
 async def setup(bot: commands.Bot):

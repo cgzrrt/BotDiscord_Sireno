@@ -18,7 +18,7 @@ class MiscCog(commands.Cog):
             description="""**Comandos de gestión:**\n
                         `s!ban`, `s!kick`, `s!purge`, `s!darRol`, `s!quitarRol`\n
                         **Comandos divertidos**\n
-                        `s!dado`, `s!caracola`, `s!encuesta`, `s!rate`"""
+                        `s!dado`, `s!caracola`, `s!encuesta`, `s!rate`, `s!say`, `s!hola`"""
         )
         await ctx.reply(embed=embed)
     

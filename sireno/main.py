@@ -21,11 +21,6 @@ bot = commands.Bot(command_prefix='s!', intents=intents) # el prefijo usado ser√
 # *** Eventos
 startEvents(bot)
 
-# Say hello
-@bot.command()
-async def hello(ctx): # s!hello
-    await ctx.send(f"Hola {ctx.author.mention}!")
-
 # Secret command 
 @bot.command()
 @commands.has_role("PSOE")
